@@ -1,0 +1,83 @@
+<!-- ============================================================= 
+  Opacity VS RGBA
+  ●	Use the previously created HTML structure
+  ●	Apply 50% opacity to the first element
+  ●	Set bg-color with 50% transparency (rgba) on the second element
+  ●	Add picture to the div element that has opacity defined
+  ●	Add picture to the div element that has rgba defined
+ ============================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            padding: 10px;
+            background-color: rgb(59, 134, 46);
+            color: rgb(64, 37, 37);
+            opacity: 50%;
+        }
+
+        .two {
+            padding: 10px;
+            background-color: rgba(42, 42, 143, 0.5);
+            color: rgb(235, 226, 226);
+        }
+
+        .three {
+            padding: 10px;
+            background-color: orangered;
+            color: bisque;
+
+        }
+
+        img {
+            width: 450px;
+            height: auto;
+        }
+
+        .first-div {
+            opacity: 50%;
+            background-color: indianred;
+
+        }
+
+        .second-div {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum sunt consectetur
+        sequi tenetur nulla impedit deserunt. Culpa odio necessitatibus sunt quibusdam iusto amet vel ut? Eius
+        blanditiis architecto odit laborum nobis minus quaerat fuga, amet recusandae, cumque iste est.</p>
+    <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum sunt consectetur
+        sequi tenetur nulla impedit deserunt. Culpa odio necessitatibus sunt quibusdam iusto amet vel ut? Eius
+        blanditiis architecto odit laborum nobis minus quaerat fuga, amet recusandae, cumque iste est.</p>
+    <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum sunt consectetur
+        sequi tenetur nulla impedit deserunt. Culpa odio necessitatibus sunt quibusdam iusto amet vel ut? Eius
+        blanditiis architecto odit laborum nobis minus quaerat fuga, amet recusandae, cumque iste est.</p>
+
+
+    <div class="first-div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dicta dolore voluptates
+            nihil quisquam rem ad corrupti culpa ullam rerum!</p>
+        <img src="https://images.unsplash.com/photo-1559163499-413811fb2344?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+            alt="laptop in nature">
+    </div>
+    <div class="second-div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, dicta dolore voluptates
+            nihil quisquam rem ad corrupti culpa ullam rerum!</p>
+        <img src="https://images.unsplash.com/photo-1559163499-413811fb2344?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+            alt="laptop in nature">
+    </div>
+
+</body>
+
+</html>

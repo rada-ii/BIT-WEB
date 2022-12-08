@@ -1,0 +1,47 @@
+<!--  
+  @font-face
+Take some time googling and find websites that provide fonts
+Downloading and including a font:
+  ○	Go to Google Fonts and download some font
+  ○	Include that font on page
+  ○	Apply the font to first paragraph
+Font via url from remote server:
+  ○	Go to Google Fonts and get the link for the font
+  ○	Include that font on the page using a link
+  ○	Apply the font to the page title
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url("./font/Roboto-Bold.ttf")
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+        }
+
+        p {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Page title with linked font</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint molestias voluptatibus laborum magni
+        reiciendis qui et ea ut, delectus sequi hic fugit. Aperiam dolores voluptate delectus beatae quas numquam.</p>
+</body>
+
+</html>

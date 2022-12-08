@@ -1,0 +1,93 @@
+<!-- 
+  Additional
+  ●	Create a table with five columns and three rows
+  ●	Each column should have different background color
+  ●	Colors of the first two columns should be defined using the following color names:
+    ○	AliceBlue
+    ○	HotPink
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table td:nth-of-type(1) {
+            background-color: aliceblue;           
+        }
+
+        table td:nth-of-type(2) {
+            background-color: hotpink;
+        }
+
+        table td:nth-of-type(3) {
+            background-color: tomato;
+        }
+
+        table td:nth-of-type(4) {
+            background-color: lime;
+        }
+        
+        table td:nth-of-type(5) {
+            background-color: aqua;
+        } */
+
+        tr td:nth-child(1) {
+            background-color: aliceblue;
+        }
+
+        tr td:nth-child(2) {
+            background-color: hotpink;
+        }
+
+        tr td:nth-child(3) {
+            background-color: tomato;
+        }
+
+        tr td:nth-child(4) {
+            background-color: lime;
+        }
+
+        tr td:nth-child(5) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td class="col1">Food</td>
+            <td class="col2">Drinks</td>
+            <td class="col3">Music</td>
+            <td class="col4">Language</td>
+            <td class="col5">Continent</td>
+        </tr>
+        <tr>
+            <td class="col1">Fruits</td>
+            <td class="col2">Shakes</td>
+            <td class="col3">Pop</td>
+            <td class="col4">English</td>
+            <td class="col5">Europe</td>
+        </tr>
+        <tr>
+            <td class="col1">Vegetables</td>
+            <td class="col2">Juice</td>
+            <td class="col3">Classical</td>
+            <td class="col4">Italian</td>
+            <td class="col5">Europe</td>
+        </tr>
+        <tr>
+            <td class="col1">Meat</td>
+            <td class="col2">Sodas</td>
+            <td class="col3">Rock</td>
+            <td class="col4">US-English</td>
+            <td class="col5">North America</td>
+        </tr>
+    </table>
+</body>
+
+</html>

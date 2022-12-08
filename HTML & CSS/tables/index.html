@@ -1,0 +1,162 @@
+<!--  Table Basics
+  ●	Create a table containing phone specification data
+  ●	Each row should represent a new phone
+  ●	Content of the first column is the phone name
+  ●	The second column should contain the phone image (height of 100px)
+  ●	The third column should contain the amount of ram
+  ●	The fourth column should contain camera information
+  ●	The fifth column should contain info about internal memory
+  ●	Table should have at least three rows!
+  ●	Add column title for each column using th
+    Merging cells across rows
+    ●	Add a new column to the table
+    ●	Title of the column should be "External antenna"
+    ●	Merge all cells in this column into one cell except the column title
+    ●	Value inside the cell should be something like "NO"
+    Merging columns
+    ●	Add a row in the table before the first row
+    ●	The new row should contain one cell stretching across all columns
+    ●	Content of the cell should be something like "Specification"
+    
+    Layout using table (centered column)
+    ●	Create a three column layout
+    ●	Center column should be 960px wide
+    ●	Center column should contain
+    -	main title
+    -	image (same width as column)
+    -	multiple text paragraphs
+
+    Future layout organization (table in the table)
+    ●	Rearrange paragraphs that you made in the previous example
+    ●	Center column should be split in two columns
+    ●	Even paragraphs should go in the left column and odd ones in the right column -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="6">Mobile Phones</th>
+        </tr>
+        <th>Model</th>
+        <th>Image</th>
+        <th>Ram memory</th>
+        <th>Camera</th>
+        <th>Internal memory</th>
+        <th>External antenna</th>
+        <tr>
+            <td>Iphone</td>
+            <td><img src="./images/i phone.jpg" alt="iphone" height="100px" width="100px"></td>
+            <td>4gb</td>
+            <td>12mpx</td>
+            <td>64gb</td>
+            <td rowspan="3">NO</td>
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td><img src="./images/samsung.jpg" alt="samsung" height="100px" width="100px"></td>
+            <td>6gb</td>
+            <td>25mpx</td>
+            <td>124gb</td>
+        </tr>
+        <tr>
+            <td>Huawei</td>
+            <td><img src="./images/huawei.jpg" alt="huawei" height="100px" width="100px"></td>
+            <td>6gb</td>
+            <td>48mpx</td>
+            <td>124gb</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Layout using table</h2>
+
+    <table border="1">
+        <tr>
+            <th>Some text</th>
+            <th width="960px">Main Title</th>
+            <th>Some text</th>
+        </tr>
+        <tr>
+            <td rowspan="4">Sidebar 1</td>
+            <td><img src="./images/coding in nature.jpg" alt="coding in nature" width="960px"></td>
+            <td rowspan="4">Sidebar 2</td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, facilis.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, possimus.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, voluptatum?</p>
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Future layout organization</h2>
+
+     <!-- EVEN ODD -->
+  <table border="1">
+    <tr>
+      <th >Some text</th>
+      <th width="960px">Main Title</th>
+      <th >Some text</th>
+    </tr>
+    <tr>
+      <td rowspan="4">Sidebar 1</td>
+      <td><img src="./images/coding in nature.jpg" alt="coding in nature" width="960px">
+
+        <!-- Table in table ( inside <td> tag ) -->
+        <table border="1" width="100%" dir="rtl">
+          <tr>
+            <th>Odd paragraphs</th>
+            <th>Even paragraphs</th>
+          </tr>
+          <tr>
+            <td><p>Paragraph 1</p></td>
+            <td><p>Paragraph 2</p></td>
+          </tr>
+          <tr>
+            <td><p>Paragraph 3</p></td>
+            <td><p>Paragraf 4</p></td>
+          </tr>
+          <tr>
+            <td><p>Paragraph 5</p></td>
+            <td><p>Paragraph 6</p></td>
+          </tr>
+        </table>
+
+      </td>
+      <td rowspan="4">Sidebar 2</td>
+    </tr>
+
+  </table>
+
+
+
+</body>
+
+</html>

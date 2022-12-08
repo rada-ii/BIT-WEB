@@ -1,0 +1,78 @@
+<!--  
+ Size
+  ●	Create a page containing two paragraphs.
+  ●	The first paragraph should have a yellow background
+  ●	The second paragraph should have a red background
+  ●	Add a lot of text to both of them
+  ●	Fixed size
+  ○	The first paragraph has width of 400px and height of 500px
+  ○	The second should have 600px width and 300px height
+  ○	Paragraph text should not overflow the box
+  ●	Dynamic size
+  ○	Max width of the first paragraph should be 300px
+  ○	Max height of the second one should be 200px
+  ○	The first paragraph text should be cut if it's bigger than the box
+  ○	The second paragraph text can overflow the paragraph (text can be bigger than the paragraph box)
+  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par-first {
+            background-color: yellow;
+            max-width: 400px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .par-second {
+            background-color: red;
+            width: 600px;
+            max-height: 300px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="par-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi accusamus
+        nisi accusantium cum officiis quasi inventore. Placeat nobis similique minima repudiandae consequatur
+        totam dolor illo ex velit debitis quos temporibus earum, quasi quidem labore obcaecati reiciendis,
+        a possimus? Corrupti animi sint ex minima libero delectus saepe atque sunt, culpa voluptas sed ut
+        excepturi nostrum facere ipsa earum laboriosam harum eligendi commodi mollitia amet? Eos deserunt
+        sequi similique aliquam possimus ut, id ea suscipit, esse, unde minima corporis praesentium
+        exercitationem! Magnam enim est voluptas totam eos? Aliquid, repudiandae hic pariatur temporibus animi,
+        velit dolor reiciendis tenetur praesentium numquam explicabo esse.Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Illum excepturi accusamus nisi accusantium cum officiis quasi inventore. Placeat nobis
+        similique minima repudiandae consequatur totam dolor illo ex velit debitis quos temporibus earum, quasi
+        quidem labore obcaecati reiciendis, a possimus? Corrupti animi sint ex minima libero delectus saepe atque
+        sunt, culpa voluptas sed ut excepturi nostrum facere ipsa earum laboriosam harum eligendi commodi mollitia
+        amet? Eos deserunt sequi similique aliquam possimus ut, id ea suscipit, esse, unde minima corporis
+        praesentium exercitationem!Magnam enim est voluptas totam eos? Aliquid, repudiandae hic pariatur
+        temporibus animi,velit dolor reiciendis tenetur praesentium numquam explicabo esse.</p>
+
+    <p class="par-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum excepturi accusamus
+        nisi accusantium cum officiis quasi inventore. Placeat nobis similique minima repudiandae consequatur
+        totam dolor illo ex velit debitis quos temporibus earum, quasi quidem labore obcaecati reiciendis,
+        a possimus? Corrupti animi sint ex minima libero delectus saepe atque sunt, culpa voluptas sed ut
+        excepturi nostrum facere ipsa earum laboriosam harum eligendi commodi mollitia amet? Eos deserunt
+        sequi similique aliquam possimus ut, id ea suscipit, esse, unde minima corporis praesentium
+        exercitationem! Magnam enim est voluptas totam eos? Aliquid, repudiandae hic pariatur temporibus animi,
+        velit dolor reiciendis tenetur praesentium numquam explicabo esse.Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Illum excepturi accusamus nisi accusantium cum officiis quasi inventore. Placeat nobis
+        similique minima repudiandae consequatur totam dolor illo ex velit debitis quos temporibus earum, quasi
+        quidem labore obcaecati reiciendis, a possimus? Corrupti animi sint ex minima libero delectus saepe atque
+        sunt, culpa voluptas sed ut excepturi nostrum facere ipsa earum laboriosam harum eligendi commodi mollitia
+        amet? Eos deserunt sequi similique aliquam possimus ut, id ea suscipit, esse, unde minima corporis
+        praesentium exercitationem!Magnam enim est voluptas totam eos? Aliquid, repudiandae hic pariatur
+        temporibus animi,velit dolor reiciendis tenetur praesentium numquam explicabo esse.</p>
+
+</body>
+
+</html>

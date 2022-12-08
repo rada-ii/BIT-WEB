@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    color:red;
+  }
+  
+  img {
+      width: 250px;
+      height: 200px;
+    }
+    .first_img {
+      position: relative;
+      top: 50px;
+      left: 100px;
+      margin-bottom: 40px ;
+    }
+    .second_img {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+    }
+    .third_img{
+      position:absolute;
+      bottom: 0px;
+    }
+    a {
+     position: fixed;
+     right: 0px;
+     bottom: 0px; 
+    }
+    

@@ -1,0 +1,295 @@
+<!-- 
+    Text/Password Fields
+● Create a page that contains a login form
+● The form should contain username and password fields
+● Add text to indicate which field is intended for what
+● Login form should contain "forgot password" link
+● When the user clicks on the link, they are redirected to a new "Reset
+password" page
+● Reset page contains:
+o an input text field that user uses to provide an email address
+o "Send" link that redirects the user back to the login form
+
+Textarea/Radio/Checkbox
+● Create a page that simulates a school quiz, containing multiple questions:
+● The first question should contain multiple options out of which the student
+can select only one
+● The second quiz question has multiple options out of which the user can
+select several
+● The third question should require from user to insert some long text
+
+Dropdown/Multiselect
+● Create a page that contains three dropdown (selects) in one row
+● Dropdowns are used by the user to provide the day, month and year of
+birth
+● The page also contains multiselect box
+● Multiselect box contains "categories" out of which the user can select
+several
+
+File input/Submit
+● Create a form used for submitting "Then VS Now" dieting/workout images
+and a description
+● The form should contain two file input fields
+● Both of the fields are file inputs
+o They are used by the user for uploading the pictures of them and
+showing what they looked like before they started working out, and
+how they look now
+
+● The page has to have an area where the user can put a picture description
+● At the end of the form, there should be a submit button with text "Send"
+that is used to submit the form
+● The form is submitted on page "handle-upload.html" and the user is
+redirected to it upon pressing the button
+● This page should contain just a "Form submitted successfully"! message
+
+Reset/Button/Hidden
+● Create a form that contains multiple elements (text, textarea, radio)
+● At the end of the form, there are two buttons:
+○ The first one is a reset button used for resetting form
+○ The second button contains an image and text inside it (it's a submit
+button)
+
+Labels/Grouping
+● Creates a form used for catering reservations
+
+● The form contains multiple elements split into groups
+● Each element should have a label assigned to it
+First group
+● Name of the group should be "Personal data"
+● The first field is for the name
+● The second one is for the email address
+● The third is for the phone number
+Second group
+● Name of the group should be "Location"
+● It should contain fields for:
+○ City
+○ Street
+○ Street number
+
+Third group
+● Name of the group should be "Event info"
+● The first element is dropdown containing the following options:
+○ birthday
+○ wedding (should be selected by default)
+○ company
+● The second element is for getting number of expected guests and it’s
+an input type number
+● Placeholder is a number you choose -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Login form</h1>
+    <form action="/" method="get">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="user-name" id="name" placeholder="Enter your name" />
+            <br />
+            <label for="password">Password</label>
+            <input type="password" name="password" minlength="8" placeholder="Must be at least 8 character long" />
+            <br />
+            Forgot <a href="./resetPassword.html">password?</a>
+        </fieldset>
+        <br />
+        <fieldset>
+            <h2>Quiz</h2>
+            <label for="quiz"><b>1) Do you like taking quizzes?</b></label>
+            <br />
+            <input name="quiz" type="radio" value="yes" id="yes" />
+            <label for="yes">Yes!</label>
+            <input name="quiz" type="radio" value="no" id="no" />
+            <label for="no">No!</label>
+            <input name="quiz" type="radio" value="undisclosed" id="undisclosed" />
+            <label for="undisclosed">I don't want to say!</label>
+            <br />
+            <br />
+            <label for="favorite-music"><b>2) Favorite type of music?</b></label>
+            <br />
+            <input type="checkbox" name="favorite-music" value="rock" id="rock" />
+            <label for="rocks">Rock</label>
+            <input type="checkbox" name="favorite-music" value="pop" id="pop" />
+            <label for="pop">Pop</label>
+            <input type="checkbox" name="favorite-music" value="hip-hop" id="hip-hop" />
+            <label for="hip-hop">Hip-hop</label>
+            <input type="checkbox" name="favorite-music" value="country" id="country" />
+            <label for="country">Country</label>
+            <br />
+            <br />
+            <label for="comment"><b>3) Write something about yourself:</b></label>
+            <br />
+            <textarea name="comment" minlength="50" rows="10" cols="30"></textarea>
+            <br />
+            <br />
+            <label for="date"><b>Your birthday:</b></label>
+            <br />
+            <label for="date"><b>month:</b></label>
+            <input type="month" name="birthday" id="month" />
+            <label for="date"><b>day:</b></label>
+            <select name="birthday" id="day" size="7">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+            <label for="date"><b>year:</b></label>
+            <input type="date" name="birthday" id="year" min="1900-12-31" max="2022-12-31" />
+            <br />
+            <h3>Favorite drink:<h3>
+                    <select name="fav-drink" id="fav-drink" multiple size="3">
+                        <option value="water">Water</option>
+                        <option value="wine">Wine</option>
+                        <option value="beer">Beer</option>
+                        <option value="milk">Milk</option>
+                        <option value="yoghurt">Yoghurt</option>
+                    </select>
+                    <br />
+                    <br />
+                    <button>Submit</button>
+        </fieldset>
+        <form action="handle-upload.html" method="POST"></form>
+        <fieldset>
+            <h1>"Then VS Now"</h1>
+            <label for="user-image"><b>Before workout & diet</b></label>
+            <input type="file" name="user-image" accept="image/*" />
+            <br />
+            <label for="comment"><b>How did you felt back then?</b></label>
+            <br />
+            <textarea name="comment" minlength="50" rows="5" cols="30">
+            </textarea>
+            <br />
+            <br />
+            <br />
+            <label for="user-image"><b>After workout & diet</b></label>
+            <input type="file" name="user-image" accept="image/*" />
+            <br />
+            <label for="comment"><b>How do you feel now?</b></label>
+            <br />
+            <textarea name="comment" minlength="50" rows="5" cols="30">
+            </textarea>
+            <br />
+            <br />
+            <button><a href="./handle-upload.html">"Send"</a></button>​​
+        </fieldset>
+    </form>
+        <fieldset>
+            <h2>Multiple elements form</h2>
+            <label for=" some text"><strong>Some text:</strong></label>
+            <input type="text" name="some text" id="someText" required />
+            <br />
+            <br />
+            <label for="comment"><b>Textarea example:</b></label>
+            <br />
+            <textarea name="comment" minlength="50" rows="5" cols="31">
+            </textarea>
+            <br />
+            <br />
+            <label for="quiz"><b>Example of radio button:</b></label>
+            <br />
+            <input name="quiz" type="radio" value="yes" id="yes" required />
+            <label for="yes">Yes!</label>
+            <input name="quiz" type="radio" value="no" id="no" />
+            <label for="no">No!</label>
+            <input name="quiz" type="radio" value="undisclosed" id="undisclosed" />
+            <label for="undisclosed">Maybe!?</label>
+            <br />
+            <br />
+            <button type="reset">Reset form!</button>
+            <br />
+            <button type="submit">
+                <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/48x48/plain/checkbox.png"
+                    alt="check image" />
+                <br />
+                Check
+            </button>
+            <br />
+        </fieldset>
+        <fieldset>
+            <h2>Catering reservations</h2>
+            <fieldset>
+                <strong>"Personal data"</strong>
+                <br />
+                <br />
+                <label for="name">Name:</label>
+                <br />
+                <input type="text" name="user-name" id="name" required />
+                <br />
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" name="email" required />
+                <br />
+                <label for="phone">Phone number:</label>
+                <br />
+                <input type="tel" name="phone" id="phone" required minlength="6" />
+            </fieldset>
+            <fieldset>
+                <strong>"Locations"</strong>
+                <br />
+                <br />
+                <label for="city">City:</label>
+                <br />
+                <input type="text" name="city" id="city" />
+                <br />
+                <label for="street">Street name:</label>
+                <br />
+                <input type="text" name="street" id="street" />
+                <br />
+                <label for="number">Number:</label>
+                <br />
+                <input type="number" name="number" id="number" min="0" />
+                </label>
+                <br />
+            </fieldset>
+            <fieldset>
+                <strong>"Event info:"</strong>
+                <br />
+                <br />
+                <select name="event" id="event" multiple size="3">
+                    <option value="birthday">Birthday</option>
+                    <option value="wedding" selected>Wedding"</option>
+                    <option value="company">Company</option>
+                </select>
+                <br />
+                <label for="number">Number of expected guests:</label>
+                <br />
+                <input type="number" name="number" id="number" placeholder="10" />
+            </fieldset>
+            <fieldset>
+                <strong>"Facebook posts scheduling:"</strong>
+                <br />
+                <br />
+                <label for="name">Name:</label>
+                <br />
+                <input type="text" name="user-name" id="name" required />
+                <br />
+                <label for="date"><b>Date on which the post should be created:</b></label>
+                <br />
+                <input type="date" name="post" id="post" />
+                <br />
+                <label for="urlAddress">URL address:</label>
+                <br />
+                <iframe
+                    src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&width=96&height=20&appId"
+                    width="96" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+                <br />
+                <strong>After publishing the post send mail to this address:</strong>
+                <a href="mailto:tara201020@gmail.com">Email</a>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>

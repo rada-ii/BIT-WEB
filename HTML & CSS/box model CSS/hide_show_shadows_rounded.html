@@ -1,0 +1,94 @@
+<!--  
+Hide/Show | Box Shadows | Rounded Corners
+  ●	Hide/Show 
+  ○	Hide the middle paragraph from the previous example
+  ○	The third paragraph should be hidden
+  ●	Box Shadow
+  ○	Add a main title on the page using h1 element
+  ○	Set width of the title to 960px
+  ○	Position the heading box to the center of the page
+  ○	The text in the heading should be centered 
+  ○	Add top and bottom padding of 50px and do that for the top/bottom margins also
+  ○	Define box background color, and font color
+  ○	Include some fancy font for the title
+  ○	Apply box shadow to the heading box
+  ●	Rounded Corners
+  ○	Round the corners on the heading box (try different radiuses)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .par-first {
+            width: 400px;
+            background-image: linear-gradient(to bottom, rgba(142, 24, 54, 0), rgb(123, 159, 16));
+            border-radius: 10px;
+        }
+
+        .par-second {
+            width: 7000px;
+            /* display:none; */
+            background-image: linear-gradient(to left, rgba(106, 232, 110, 0), rgb(174, 86, 86));
+            border-radius: 5px;
+        }
+
+        .par-third {
+            width: 500px;
+            /* display: none; */
+            background-image: linear-gradient(to right, rgba(18, 25, 34, 0), rgb(30, 184, 25));
+            border-radius: 15px;
+        }
+
+        .par-first,
+        .par-second,
+        .par-third {
+            /* display: inline-block; */
+            margin-right: 20px;
+            border: 1px solid rosybrown;
+            box-shadow: inset 0 0 10px black;
+        }
+
+        .title {
+            width: 960px;
+            text-align: center;
+            padding: 50px 0px;
+            margin: 50px 0px;
+            background-image: linear-gradient(to top, rgba(37, 14, 68, 0), rgb(15, 31, 95));
+            color: darkslateblue;
+            font-family: 'Satisfy', cursive;
+            box-shadow: inset 0 0 10px black;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">Title</h1>
+
+    <p class="par-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tenetur ipsam
+        distinctio dignissimos molestiae odit harum. Doloribus quas voluptates reiciendis iusto nihil eligendi quae
+        consequuntur a incidunt, eaque laborum dolorum dolorem labore, odio magni id ipsum blanditiis architecto
+        molestias dolor provident praesentium accusantium officiis quisquam? Laudantium, ratione unde? Nisi.</p>
+
+    <p class="par-second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tenetur ipsam
+        distinctio dignissimos molestiae odit harum. Doloribus quas voluptates reiciendis iusto nihil eligendi quae
+        consequuntur a incidunt, eaque laborum dolorum dolorem labore, odio magni id ipsum blanditiis architecto
+        molestias dolor provident praesentium accusantium officiis quisquam? Laudantium, ratione unde? Nisi.</p>
+
+    <p class="par-third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tenetur ipsam
+        distinctio dignissimos molestiae odit harum. Doloribus quas voluptates reiciendis iusto nihil eligendi quae
+        consequuntur a incidunt, eaque laborum dolorum dolorem labore, odio magni id ipsum blanditiis architecto
+        molestias dolor provident praesentium accusantium officiis quisquam? Laudantium, ratione unde? Nisi.</p>
+
+</body>
+
+</html>

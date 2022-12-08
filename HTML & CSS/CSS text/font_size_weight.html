@@ -1,0 +1,73 @@
+<!--
+  ●	Use HTML/CSS from the previous example
+  ●	Apply global font size/weight
+  ●	Override the global font for the first paragraph (apply some other font)
+  ●	Apply “oblique” style to the text in the second paragraph
+  ●	Create a span element somewhere inside the third paragraph
+  ●	Increase weight of the text inside the span and make it italic
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25px;
+            font-weight: 300;
+        }
+
+        .first {
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .first span {
+            font-family: cursive;
+        }
+
+        .second {
+            font-style: oblique;
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        }
+
+        .second span {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .third {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .third span {
+            font-weight: 800;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse <span>&quot;
+            molestiae eligendi veniam laboriosam&quot;</span> laboriosam atque nesciunt minima veniam voluptas?
+        Reprehenderit obcaecati harum nobis libero nemo, nihil laboriosam voluptas nulla? Tempora deleniti
+        ratione voluptatibus praesentium!</p>
+
+    <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse <span>&quot;
+            molestiae eligendi veniam laboriosam&quot;</span> laboriosam atque nesciunt minima veniam voluptas?
+        Reprehenderit obcaecati harum nobis libero nemo, nihil laboriosam voluptas nulla? Tempora deleniti
+        ratione voluptatibus praesentium!</p>
+
+    <p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse <span>&quot;
+            molestiae eligendi veniam laboriosam&quot;</span> laboriosam atque nesciunt minima veniam voluptas?
+        Reprehenderit obcaecati harum nobis libero nemo, nihil laboriosam voluptas nulla? Tempora deleniti
+        ratione voluptatibus praesentium!</p>
+
+</body>
+
+</html>

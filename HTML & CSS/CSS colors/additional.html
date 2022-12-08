@@ -1,0 +1,86 @@
+<!-- 
+  Additional
+  ●	Create a table with five columns and three rows
+  ●	Each column should have different background color
+  ●	Colors of the first two columns should be defined using the following color names:
+    ○	AliceBlue
+    ○	HotPink
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        .col1 {
+            background: aliceblue;
+        }
+
+        .col2 {
+            background: hotpink;
+        }
+
+        .col3 {
+            background: tomato;
+        }
+
+        .col4 {
+            background: lime;
+        }
+
+        .col5 {
+            background: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1">
+        <tr>
+            <th class="col1">Food</th>
+            <th class="col2">Drinks</th>
+            <th class="col3">Music</th>
+            <th class="col4">Language</th>
+            <th class="col5">Continent</th>
+        </tr>
+        <tr>
+            <td class="col1">Fruits</td>
+            <td class="col2">Shakes</td>
+            <td class="col3">Pop</td>
+            <td class="col4">English</td>
+            <td class="col5">Europe</td>
+        </tr>
+        <tr>
+            <td class="col1">Vegetables</td>
+            <td class="col2">Juice</td>
+            <td class="col3">Classical</td>
+            <td class="col4">Italian</td>
+            <td class="col5">Europe</td>
+        </tr>
+        <tr>
+            <td class="col1">Meat</td>
+            <td class="col2">Sodas</td>
+            <td class="col3">Rock</td>
+            <td class="col4">US-English</td>
+            <td class="col5">North America</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

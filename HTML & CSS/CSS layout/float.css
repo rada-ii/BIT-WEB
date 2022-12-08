@@ -4,12 +4,19 @@ ul{
     overflow: hidden;
     width: 960px;
     margin: auto;
+    text-decoration: none;
 }
 
 li{
     float: right;
-    /* display: inline; */
+    display: block;
     padding: 15px 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
 }

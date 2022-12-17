@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.clearfix {
+  content: "";
+  clear: both;
+}
+
+.header {
+  margin-bottom: 60px;
+  padding: 5px 25px;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  float: left;
+  margin-right: 25px;
+}
+
+.title h1 p {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+.aside,
+.main {
+  float: left;
+  padding: 5px 25px;
+}
+
+.aside {
+  width: 40%;
+}
+
+.main {
+  width: 60%;
+  border-left: solid 3px;
+}
+
+.article {
+  margin-bottom: 20px;
+}
+
+.aside h2,
+.article h2 {
+  margin: 5px 20px 20px 5px;
+}

@@ -1,0 +1,87 @@
+.hr-white .hr-line {
+  border-bottom: #fff 3px solid;
+}
+.hr-white .hr-icon {
+  color: #fff;
+}
+
+.hr-black .hr-line {
+  border-bottom: 3px solid;
+}
+.hr-black .hr-icon {
+  color: black;
+}
+
+nav {
+  background-color: #2c3e50;
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar-toggler {
+    background-color: #18bc9c;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+.port {
+  padding-bottom: 0.5rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.btn-primary:hover {
+  color: #212529;
+  background-color: #52bebe;
+  border-color: #8ad3d3;
+}
+
+.btn-secondary {
+  color: #fff;
+  border: none;
+  background-color: #18bc9c;
+}
+
+.btn-secondary:hover {
+  color: #18bc9c;
+  background-color: #fff;
+  border-color: #18bc9c;
+}
+
+.form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.form-label {
+  color: #495057 !important;
+}
+
+.social-media {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+body {
+  background: #fff;
+}
+
+.sec-green {
+  background-color: #18bc9c;
+}
+
+footer {
+  background: #2c3e50;
+}/*# sourceMappingURL=main.css.map */

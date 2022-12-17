@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixins";
+@import "./navbar";
+@import "./portfolio";
+@import "./contact";
+
+
+body {
+  background: $white;
+}
+.sec-green {
+  background-color: $greenish;
+}
+footer{
+  background: $blueish;
+}

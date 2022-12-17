@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: block;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.logo {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+.hero {
+  padding: 15px 10px;
+  border: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.nav-bar {
+  width: 100%;
+  margin: 2opx 0;
+  border: 1px solid slategray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-bar ul li {
+  border: 1px solid slategrey;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.nav-bar ul li:hover {
+  background: dodgerblue;
+  border: none;
+}
+
+.nav-bar ul li a:hover {
+  color: white;
+}
+
+.main {
+  width: 100%;
+}
+
+.section {
+  margin: 20px 0;
+  border: 1px solid slategrey;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.section img {
+  width: 100%;
+  border: 1px solid slategrey;
+}
+
+.section p {
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .logo {
+    float: left;
+    padding: 5px 0;
+  }
+
+  .nav-bar {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .nav-bar ul {
+    float: right;
+  }
+
+  .nav-bar ul li {
+    float: left;
+    border: none;
+  }
+
+  .nav-bar ul li a {
+    padding: 10px 20px;
+  }
+
+  .hero {
+    clear: both;
+    margin-top: 50px;
+  }
+
+  .section img {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .section p {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  /* .section {
+    border: 1px solid slategrey;
+  }
+} */
+
+@media screen and (min-width: 545px) {
+  .container {
+    width: 65%;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .section img {
+    margin: 0;
+    float: none;
+    width: 100%;
+  }
+
+  .section {
+    float: left;
+    width: 32%;
+    padding: 0;
+    margin: 15px 1%;
+    border: none;
+  }
+
+  .first {
+    margin-left: 0;
+  }
+
+  .last {
+    margin-left: 0;
+  }
+}
+}

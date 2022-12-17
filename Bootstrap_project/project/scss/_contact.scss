@@ -1,0 +1,42 @@
+.btn-primary {
+  color: $white;
+  background-color: transparent;
+  border-color: $white;
+}
+
+.btn-primary:hover {
+  color: #212529;
+  background-color: #52bebe;
+  border-color: #8ad3d3
+}
+
+.btn-secondary {
+  color: $white;;
+  border: none;
+  background-color: $greenish;
+  
+}
+
+.btn-secondary:hover {
+  color: $greenish;
+  background-color: $white;
+  border-color: $greenish;
+}
+
+
+.form-control{
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.form-label{
+  color: $input-text !important;
+}
+.social-media{
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px
+}

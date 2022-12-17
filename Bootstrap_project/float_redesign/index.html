@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <title>Float Layout</title>
+</head>
+
+<body>
+
+  <div class="container rounded-3">
+
+  
+    <div class="row">
+
+   
+      <header class="col-md-12">
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">Home</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+      
+        <section class="col-md-12 hero">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/152655711/original/909c3cab9b1ef397e8e8dac977b51ac3bb8d0d4e/build-your-responsive-website-using-html-css-js-and-php.png" class="d-block w-100" alt="...">    
+              </div>
+              <div class="carousel-item">
+                <img src="https://wallpapercave.com/wp/wp7420966.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/178977443/original/d6e1c5df8a04b98430b372cbd8441428bb1bd921/convert-your-psd-xd-figma-template-to-html-and-css.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+        
+      </header>
+    
+    </div>
+
+       <main>
+
+   
+    <section class="row mt-2 p-2">
+
+      <article class="col-md-4 "> 
+        <div class="card">
+          <div class="bg-danger"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-md-4">
+        <div class="card">
+          <div class="bg-dark"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+
+      <aside class="col-md-4">
+        <div class="card">
+          <div class="card-body aside">
+            <p>Rebuild slack.com.</p>
+            <hr>
+            <p>Zašto bootcamp format?</p>
+            <hr>
+            <p>React - prozor u svet web aplikacija.</p>
+            <hr>
+            <p>Najveće zablude o programerima u Srbiji.</p>
+            <hr>
+          </div>
+        </div>
+      </aside>
+     
+
+    </section>
+
+   
+    <section class="row mt-2 p-2">
+
+      <article class="col-md-4 "> 
+        <div class="card">
+          <div class="bg-warning"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-md-4">
+        <div class="card">
+          <div class="bg-success"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-md-4">
+        <div class="card">
+          <div class="bg-danger"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+      
+
+    </section>
+
+
+    <section class="row mt-2 p-2">
+
+      <article class="col-md-4 "> 
+        <div class="card">
+          <div class="bg-dark"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-md-4">
+        <div class="card">
+          <div class="bg-warning"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-md-4">
+        <div class="card">
+          <div class="bg-success"><h1>300 x 200</h1></div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem ratione sit illum, tenetur commodi quas praesentium doloremque, facere vel minima, quasi quidem eaque repudiandae! Perferendis ullam autem vero aliquam voluptatem veritatis ipsa, sint, blanditiis dolores fuga ipsam, asperiores facere fugit enim nihil id commodi cum aliquid eius magnam dolorem?</p>
+          </div>
+        </div>
+      </article>
+     
+
+    </section>
+
+    </main>
+
+  </div>  
+
+
+    <footer class="container-fluid mt-2 footer">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; BitStudent</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+
+</html>

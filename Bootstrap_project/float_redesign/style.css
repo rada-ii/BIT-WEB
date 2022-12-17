@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  background: rgb(231, 228, 228);
+
+}
+
+.container {
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 2px 4px #555555;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+
+.navbar {
+  padding: 13px 10px;
+  background: rgb(228, 46, 13);
+  border-bottom: 1px solid #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  background: rgb(241, 239, 239);
+  color: rgb(228, 46, 13);
+}
+
+
+.hero img {
+  width: 100%;
+}
+
+
+
+.bg-danger,
+.bg-dark,
+.bg-warning,
+.bg-success {
+  padding-bottom: 250px;
+}
+
+.aside {
+  background: rgb(245, 189, 35);
+}
+
+
+.footer {
+  background: rgb(48, 48, 66);
+  color: #fff;
+}
+.footer .container {
+  padding-top: 11px;
+  background: rgb(48, 48, 66);
+  box-shadow: none;
+}

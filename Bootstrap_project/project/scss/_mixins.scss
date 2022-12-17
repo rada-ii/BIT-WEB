@@ -1,0 +1,37 @@
+@mixin line($color){
+  border-bottom: 3px solid;
+}
+.hr-theme-slash-2 {
+  display: flex;
+  justify-content: center;
+  
+  .hr-line {
+    width: 50px;
+    position: relative;
+    margin: 15px 5px 15px 5px;
+  }
+  .hr-icon {
+    position: relative;
+    top: 3px;
+  }
+}
+.hr-white {
+  .hr-line{
+    //@include line($white);
+    border-bottom: 3px solid $white;
+  }
+  .hr-icon{
+    color: $white;
+  }
+}
+
+
+.hr-black {
+  .hr-line{
+    //border-bottom: 3px solid $black;
+    @include line($black);
+  }
+  .hr-icon{
+    color: $black;
+  }
+}

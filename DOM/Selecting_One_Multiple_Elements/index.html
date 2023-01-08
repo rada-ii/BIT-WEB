@@ -1,0 +1,48 @@
+<!-- Selecting One/Multiple Elements
+Create two unordered lists on the page.
+Create a function that selects the second list and applies a class that sets some
+background color to it.
+Create a second function that, when triggered, selects all <li> elements on the
+page.
+The function also sets a class that sets some bg color to every <li> element.
+Create one more unordered list and one more function
+The function​ should select only <li> elements from that last list
+Each <li> element should get a class that sets some bg color and transforms the
+text to uppercase. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg-color {
+        background-color: blueviolet;
+      }
+      .list3 {
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list1">
+      <li>List 1 item 1</li>
+      <li>List 1 item 2</li>
+    </ul>
+    <button onclick="setBgColor()">Background Color 2. list</button>
+    <ul id="list2">
+      <li>List 2 item 1</li>
+      <li>List 2 item 2</li>
+    </ul>
+    <button onclick="setAllBgColor()">Set Background Color For all li</button>
+
+    <ul>
+      <li>List 3 item 1</li>
+      <li>List 3 item 2</li>
+    </ul>
+    <button id="btn">Transform Text</button>
+
+    <script src="file.js"></script>
+  </body>
+</html>

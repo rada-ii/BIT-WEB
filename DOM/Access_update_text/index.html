@@ -1,0 +1,45 @@
+<!-- Access/Update Text Node
+Create an unordered list containing <li> items that represent navigation.
+Create a function that takes text from one of the <li> elements and presents it on
+screen using alert.
+
+Create one more function.
+The function should take some text as an argument.
+The function should select the last <li> element in the list and replace its text with
+text passed as the function argument. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+      }
+      ul li {
+        background-color: aqua;
+        color: blue;
+        padding: 2px;
+      }
+      button {
+        background-color: lightcoral;
+        margin-left: 50px;
+        color: dodgerblue;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+    <button id="replace-button">Replace Text</button>
+    <script src="file.js"></script>
+  </body>
+</html>

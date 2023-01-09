@@ -1,0 +1,48 @@
+<!-- Events propagation, stopping and preventing default
+
+Create page containing gallery
+Gallery contains six pictures
+At least one of the pictures should have width of 300px
+
+Add event listeners to all images on page
+User can click on image and in that moment image will get 1px red border
+
+If Image width is not 300px event propagation should be stopped!
+
+Register event listener on document object, which listen for clicks
+When click occurs it should print in console on which element user clicked
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container gallery">
+      <div class="photo two">
+        <img class="pho" src="./images/code1.jpg" alt="code1" />
+      </div>
+      <div class="photo one">
+        <img class="pho" src="./images/code2.jpg" alt="code2" />
+      </div>
+      <div class="photo three">
+        <img class="pho" src="./images/code3.jpg" alt="code3" />
+      </div>
+      <div class="photo four">
+        <img class="pho" src="./images/code4.jpg" alt="code4" />
+      </div>
+      <div class="photo five">
+        <img class="pho" src="./images/code5.jpg" alt="code5" />
+      </div>
+      <div class="photo six">
+        <img class="pho" src="./images/code6.jpg" alt="code6" />
+      </div>
+    </div>
+    <script src="file.js"></script>
+  </body>
+</html>

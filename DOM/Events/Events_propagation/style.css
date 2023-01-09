@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container.gallery {
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.photo {
+  overflow: hidden;
+}
+
+.photo img {
+  width: 400px;
+  height: auto;
+  transition: transform 0.5s;
+}
+
+.one img {
+  width: 300px;
+}
+
+.photo img:hover {
+  transform: scale(1.1);
+}

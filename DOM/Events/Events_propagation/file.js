@@ -13,7 +13,7 @@
 // When click occurs it should print in console on which element user clicked
 
 //  -->
-let images = document.querySelectorAll(".pho");
+let images = document.querySelectorAll('.pho');
 console.log(images);
 // images.forEach((item) => {
 //   item.addEventListener("click", (event) => {
@@ -22,14 +22,14 @@ console.log(images);
 //   });
 // });
 
-images.forEach((image) => {
-  image.addEventListener("click", (event) => {
+images.forEach(image => {
+  image.addEventListener('click', event => {
     console.log(event.target.offsetWidth);
     if (event.target.offsetWidth > 300) {
       event.stopPropagation();
       return;
     }
 
-    event.target.style.border = "1px solid red";
+    event.target.style.border = '5px solid red';
   });
 });

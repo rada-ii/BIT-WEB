@@ -26,6 +26,9 @@
   width: 300px;
 }
 
+.two img {
+  width: 200px;
+}
 .photo img:hover {
   transform: scale(1.1);
 }

@@ -21,3 +21,16 @@ function cancelToggle() {
 
 toggleBtn.addEventListener('click', startToggle);
 cancelBtn.addEventListener('click', cancelToggle);
+
+// let buttonText = 'ON';
+
+// function toggleButton() {
+//   if (buttonText === 'ON') {
+//     buttonText = 'OFF';
+//   } else {
+//     buttonText = 'ON';
+//   }
+//   document.getElementById('button').innerHTML = buttonText;
+// }
+
+// document.getElementById('button').addEventListener('click', toggleButton);

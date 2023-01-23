@@ -1,0 +1,40 @@
+<!-- Traverse (Redo Gallery)
+Create a page with two “galleries”
+Each gallery should contain 3 photos and it should be wrapped in a div
+Width of the pictures should be 33%
+One picture in the first gallery should have a red border around it
+Red border should be a result of a class named “selected”
+Create a function that selects the image with red borders and removes
+them, then uses traversing technique to navigate to the second gallery and
+applies the red borders to the middle picture -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="gallery1">
+        <img src="./images/code1.jpg" class="selected" />
+        <img src="./images/code2.jpg" />
+        <img src="./images/code3.jpg" />
+      </div>
+      <div id="gallery2">
+        <img src="./images/code4.jpg" />
+        <img src="./images/code5.jpg" />
+        <img src="./images/code6.jpg" />
+      </div>
+      <button id="switchBtn" onclick="selectMiddleImg()">Switch</button>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

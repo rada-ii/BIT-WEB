@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitShow</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h2 class="col-auto">BitShow</h2></a>
+        <form class="d-flex ms-auto form">
+          <input
+            class="form-control search col-auto"
+            id="search"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <ul class="pe-0" id="search-list"></ul>
+        </form>
+      </div>
+    </nav>
+
+    <h2 class="display-3 text-center my-4">Popular Shows</h2>
+
+    <main class="container">
+      <section class="row gy-2" id="main-section">
+        <div class="show">
+          <a href="">
+            <img src="" alt="" />
+            <p></p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid pt-3 pb-1 fixed-bottom">
+      <div class="container text-center">
+        <p>Copyright &copy; Bit Student 2023</p>
+      </div>
+    </footer>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

@@ -52,15 +52,48 @@ $(document).on('click', function (event) {
     $('.search').val('');
   }
 });
+
 document.addEventListener('DOMContentLoaded', function () {
-  var loaderContainer = document.querySelector('#loader-container');
-  var content = document.querySelector('#content');
+  let loaderContainer = document.querySelector('#loader-container');
+  let content = document.querySelector('#content');
+  let timeoutID;
 
   function showContent() {
+    clearTimeout(timeoutID);
     loaderContainer.parentElement.classList.remove('loading');
     document.body.classList.add('loaded');
   }
 
+  function removeLoader() {
+    loaderContainer.parentElement.classList.remove('loading');
+    document.body.classList.add('loaded');
+  }
+
+  timeoutID = setTimeout(removeLoader, 3000);
+
   loaderContainer.parentElement.classList.add('loading');
   document.addEventListener('click', showContent);
+
+  function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+  function setGradient() {
+    let color1 = getRandomColor();
+    let color2 = getRandomColor();
+    let gradient = 'linear-gradient(135deg, ' + color1 + ', ' + color2 + ')';
+    if (gradient === 'linear-gradient(135deg, #000000, #000000)') {
+      setGradient();
+    } else {
+      loaderContainer.style.backgroundImage = gradient;
+      setTimeout(setGradient, 1000); // Change gradient every 500ms
+    }
+  }
+
+  setGradient();
 });

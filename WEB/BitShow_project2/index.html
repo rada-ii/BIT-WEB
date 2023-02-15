@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="stylesheet"
-      href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,17 +40,12 @@
       </nav>
 
       <h2 class="display-3 text-center my-4">Popular Shows</h2>
-
       <main class="container">
-        <section class="row gy-2" id="main-section">
-          <div class="show">
-            <a href="">
-              <img src="" alt="" />
-              <p></p>
-            </a>
-          </div>
-        </section>
+        <section class="row gy-2" id="main-section"></section>
+        <div class="text-center my-4" id="load-more-container"></div>
       </main>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
       <footer class="container-fluid pt-3 pb-1 fixed-bottom">
         <div class="container text-center">
@@ -58,7 +53,8 @@
         </div>
       </footer>
     </div>
-    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
     <script src="search.js"></script>

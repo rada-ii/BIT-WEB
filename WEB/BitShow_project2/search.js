@@ -97,3 +97,74 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setGradient();
 });
+let bottomButton = document.getElementById('myBtn1');
+let topButton = document.getElementById('myBtn2');
+
+// When the user scrolls, show the appropriate button depending on their scroll position
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop == 0 || document.documentElement.scrollTop == 0) {
+    topButton.style.display = 'none';
+    bottomButton.style.display = 'block';
+  } else if (
+    window.innerHeight + window.pageYOffset >=
+    document.body.offsetHeight
+  ) {
+    bottomButton.style.display = 'none';
+    topButton.style.display = 'block';
+  } else {
+    topButton.style.display = 'block';
+    bottomButton.style.display = 'block';
+  }
+}
+
+// When the user clicks on the bottom button, scroll to the bottom of the document
+function scrollToBottom() {
+  $('html, body').animate({ scrollTop: $(document).height() }, 1, function () {
+    bottomButton.style.display = 'none';
+    topButton.style.display = 'block';
+  });
+}
+
+// When the user clicks on the top button, scroll to the top of the document
+function scrollToTop() {
+  $('html, body').animate({ scrollTop: 0 }, 1, function () {
+    bottomButton.style.display = 'block';
+    topButton.style.display = 'none';
+  });
+}
+
+// When the user scrolls, show the appropriate button depending on their scroll position
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  var documentHeight = $(document).height();
+  var windowHeight = $(window).height();
+
+  if (scrollTop > 0) {
+    topButton.style.display = 'block';
+  } else {
+    topButton.style.display = 'none';
+  }
+
+  if (documentHeight - (scrollTop + windowHeight) < 1) {
+    bottomButton.style.display = 'none';
+  } else {
+    bottomButton.style.display = 'block';
+  }
+});
+
+// Attach click event handler to the top button
+$(topButton).click(function () {
+  scrollToTop();
+});
+
+// Attach click event handler to the bottom button
+$(bottomButton).click(function () {
+  $('html, body').animate({ scrollTop: $(document).height() }, 1, function () {
+    bottomButton.style.display = 'none';
+    topButton.style.display = 'block';
+  });
+});

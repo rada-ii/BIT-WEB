@@ -111,6 +111,7 @@ $.ajax({
   success: function (data) {
     let show = new Show(data);
     show.display();
+    bottomButton.style.display = 'block';
   },
   error: function () {
     alert('Error fetching show data. Please try again later.');

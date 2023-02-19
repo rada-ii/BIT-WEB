@@ -139,9 +139,9 @@ function scrollToTop() {
 
 // When the user scrolls, show the appropriate button depending on their scroll position
 $(window).scroll(function () {
-  var scrollTop = $(window).scrollTop();
-  var documentHeight = $(document).height();
-  var windowHeight = $(window).height();
+  let scrollTop = $(window).scrollTop();
+  let documentHeight = $(document).height();
+  let windowHeight = $(window).height();
 
   if (scrollTop > 0) {
     topButton.style.display = 'block';

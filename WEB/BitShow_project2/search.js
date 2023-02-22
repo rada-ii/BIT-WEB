@@ -1,3 +1,5 @@
+// TI CES JAAAAKO LEPO DA SE SNADJES U REACTU :) 
+
 $('.search').on('keyup', function () {
   let searchValue = $(this).val().toLowerCase();
   let searchResults = allShows.filter(show =>

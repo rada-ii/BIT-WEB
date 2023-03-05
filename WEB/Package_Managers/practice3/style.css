@@ -1,0 +1,19 @@
+/* #posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+h1 {
+  text-align: center;
+  background-color: #ed7171;
+  color: #ffffff;
+}
+
+.para {
+  background-color: lightslategrey;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
